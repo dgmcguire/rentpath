@@ -9,7 +9,7 @@ I'm attempting to show off basic implementations for various libs in the elixir 
 #### To get this up and working
 
 1. Get a temporary access token from github [here](https://github.com/blog/1509-personal-api-tokens) (that way you can avoid putting your real password anywhere in the config)
-2. start up some sort of local tunnel or something so that you can give github a working URL for their callback trigger to POST to.  I use [ngrok](https://ngrok.com/)
+2. start up some sort of local tunnel or something so that you can give github a working URL for their callback trigger to send POST requests to.  I recommend using [ngrok](https://ngrok.com/)
 3. create a `config/dev.secret.exs` - this is where you'll store your temporary api token from github:
 ```
 # dev.secret.exs
