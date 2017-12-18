@@ -1,0 +1,14 @@
+<form id="create_hook" action="/hooks" method="POST">
+  <label> Create a hook for a repo </label>
+  <input type="text" name="owner" placeholder="owner" />
+  <input type="text" name="repo" placeholder="repo"/>
+  <input type="hidden" name="_csrf_token" value="<%= Plug.CSRFProtection.get_csrf_token %>">
+  <button id="hook_submit" type="submit">
+    submit
+  </button>
+</form>
+
+<section style="display:flex;flex-direction:row;">
+  <div id="user_score" style="height:100%;width:30%;">Users</div>
+  <div id="events">Event log</div>
+</section>
